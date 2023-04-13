@@ -1,3 +1,2 @@
 #!/bin/bash
-x= absolute pathway of current working directory
-echo $x 
+echo "absolute pathway of current working directory"
