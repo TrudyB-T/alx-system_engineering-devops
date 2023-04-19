@@ -1,2 +1,2 @@
 #!/bin/bash
-x="id" | echo hello $x
+W
