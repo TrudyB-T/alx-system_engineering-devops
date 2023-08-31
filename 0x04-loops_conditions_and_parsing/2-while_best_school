@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#displays Best School 10 times
+var='Best School'
+min=1
+max=11
+
+while [ "$min" -lt "$max" ]; do
+echo "$var"
+((min++))
+done
