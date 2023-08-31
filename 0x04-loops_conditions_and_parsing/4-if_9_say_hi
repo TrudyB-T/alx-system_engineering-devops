@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#displays Best School 10 times
+#displays Best School 10 times except 9th iteration
 var='Best School'
 vari='Hi'
 min=1
