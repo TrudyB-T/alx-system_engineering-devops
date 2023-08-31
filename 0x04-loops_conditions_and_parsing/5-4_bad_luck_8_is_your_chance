@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#displays Best School 10 times except 9th iteration
+var='Best School'
+vari='good luck'
+va='bad luck'
+min=1
+max=11
+ite=4
+iter=8
+
+while [ "$min" -lt "$max" ]; do
+	if [ "$min" -eq "$ite" ]; then
+		echo "$va"
+	elif [ "$min" -eq "$iter" ]; then
+		echo "$vari"
+	else
+		echo "$var"
+
+	fi
+	((min++))
+done
