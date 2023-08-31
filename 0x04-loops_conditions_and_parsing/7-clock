@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#display hours from 0 to 12
+#display minutes from 1 to 59
+
+hour="0"
+min="1"
+max_min="60"
+
+while [ "$hour" -le 12 ]; do
+	printf "Hour: %d\n" "$hour"
+
+	min=1
+
+	while [ "$min" -lt "$max_min" ]; do
+		echo "$min"
+		((min++))
+	done
+	((hour++))
+done
