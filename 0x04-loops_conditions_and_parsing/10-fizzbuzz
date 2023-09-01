@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#Displays FizzBuzz when the number is a multiple of 3 and 5
+#Displays Fizz when the number is multiple of 3
+#Displays Buzz when the number is a multiple of 5
+#Otherwise, displays the number
+
+
+min=1
+max=100
+
+while [ "$min" -le "$max" ];do
+	if (( min % 3 == 0 )) && (( min % 5 == 0 )); then
+		echo "FizzBuzz"
+	elif (( min % 3 == 0 )); then
+		echo "Fizz"
+	elif (( min % 5 == 0 )); then
+		echo "Buzz"
+	else
+		echo "$min"
+	fi
+	
+		((min++))	
+done
