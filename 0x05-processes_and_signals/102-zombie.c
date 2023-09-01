@@ -24,7 +24,7 @@ int infinite_while(void)
 
 
 /**
- * main - Entry point
+ * main - Entry point, generates 5 processes
  *
  * Return:Always 0
  */
