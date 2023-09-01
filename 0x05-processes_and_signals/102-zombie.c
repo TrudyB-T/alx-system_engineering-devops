@@ -3,7 +3,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include "main.h"
+#define _GNU_SOURCE
 
 /**
  * infinite_while - creates an infinite while loop
