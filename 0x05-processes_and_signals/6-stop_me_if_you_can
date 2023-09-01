@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#stops 4-to_infinity_and_beyond process
+
+p=4-to_infinity_and_beyond
+
+if [ -n "$p" ]; then
+	pkill -f "$p"
+fi
