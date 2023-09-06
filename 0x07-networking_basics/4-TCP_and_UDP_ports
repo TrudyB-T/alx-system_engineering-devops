@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #shows listening sockets, PID and name of the program to
-which each socket belongs
+#which each socket belongs
 
 netstat -lp
