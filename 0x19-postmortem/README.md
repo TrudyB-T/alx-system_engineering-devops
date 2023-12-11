@@ -1,5 +1,5 @@
 
-![image](./image.jpeg)
+![image](../image.jpeg)
 
 Issue Summary:
 
