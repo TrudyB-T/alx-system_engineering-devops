@@ -1,7 +1,9 @@
 Issue Summary:
 
-Duration:
+Duration: 
+
 Start Time: December  10, 2023, 14:30 WAT
+
 End Time: January 12, 2023, 03:45 WAT
 
 Impact:
