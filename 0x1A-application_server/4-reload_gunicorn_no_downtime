@@ -8,6 +8,6 @@ if [ -z "$PID" ]
 then
   echo "Gunicorn is not running."
 else
-   sudo kill -HUP "$PID"
+   sudo pkill -HUP "$PID"
   echo "Gunicorn has been gracefully reloaded."
 fi
