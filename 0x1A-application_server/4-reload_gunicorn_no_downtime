@@ -2,8 +2,9 @@
 #Gracefully reloads Gunicorn.
 
 
-gunicorn_pid=$(pgrep gunicorn)
+gunicorn_pids=($(pgrep gunicorn))
 
-if [ -n "$gunicorn_pid" ]; then
-    kill -HUP "$gunicorn_pid"
-fi
+for pid in "${gunicorn_pids[@]}"; do
+    kill -HUP "$pid"
+    echo "Sent HUP signal to Gunicorn process with PID $pid."
+done
