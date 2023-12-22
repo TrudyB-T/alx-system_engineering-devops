@@ -2,7 +2,7 @@
 #Gracefully reloads Gunicorn.
 
 
-gunicorn_pids=($(pgrep gunicorn))
+mapfile -t gunicorn_pids < <(pgrep gunicorn)
 
 for pid in "${gunicorn_pids[@]}"; do
     kill -HUP "$pid"
