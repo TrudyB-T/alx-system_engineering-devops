@@ -7,4 +7,12 @@ gunicorn_pid=$(pgrep gunicorn)
 if [ -n "$gunicorn_pid" ]; then
     kill -HUP "$gunicorn_pid"
     sleep 2
+
+   if ps -p "$gunicorn_pid" > /dev/null; then
+        echo "Gunicorn master process is still running."
+    else
+        echo "Gunicorn master process has successfully restarted."
+    fi
+else
+    echo "Error: Gunicorn master process not found."
 fi
