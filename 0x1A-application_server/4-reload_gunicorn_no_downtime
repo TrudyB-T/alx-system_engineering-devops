@@ -6,4 +6,5 @@ gunicorn_pid=$(pgrep gunicorn)
 
 if [ -n "$gunicorn_pid" ]; then
     kill -HUP "$gunicorn_pid"
+    sleep 2
 fi
